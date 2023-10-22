@@ -1,0 +1,107 @@
+/* 样式规定了计算器的外观 */
+
+.calculator {
+    height: 55px;
+    width: 350px;
+    background-color: #FAFAD2; /* 设置背景颜色为米色 */
+}
+
+/* 布局中的点（dot）元素使用了 Flex 布局 */
+
+#dots {
+    display: flex;
+}
+
+/* 按钮的样式 */
+
+.button {
+    height: 70px;
+    width: 70px;
+    color: aliceblue; /* 文本颜色为淡蓝色 */
+    font-size: large;
+}
+
+/* 显示屏的样式 */
+
+.show {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+    width: 342px;
+    font-size: 2em;
+    color: #000000; /* 文本颜色为黑色 */
+    margin-top: 7px;
+    margin-right: 2px;
+}
+
+.form {
+    color: #C8C822; /* 文本颜色为浅黄色 */
+}
+
+/* 弹性布局容器 */
+
+.flex {
+    display: flex;
+}
+
+/* 圆点的样式 */
+
+.dot {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* 顶部按钮的背景颜色 */
+
+#top .button {
+    background-color: #BDB76B; /* 背景颜色为深卡其色 */
+}
+
+/* 数字按钮的背景颜色 */
+
+#num .button {
+    background-color: #B8860B; /* 背景颜色为深金色 */
+}
+
+/* 右侧按钮的背景颜色 */
+
+aside-right .button {
+    background-color: #DAA520; /* 背景颜色为金色 */
+}
+
+/* 主要布局容器 */
+
+main {
+    width: 360px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+/* 数字区域的布局容器 */
+
+#num {
+    flex-wrap: wrap;
+}
+
+/* 顶部按钮区域的布局容器 */
+
+#top {
+    flex-wrap: wrap;
+}
+
+/* 右侧按钮区域的布局容器 */
+
+aside-right {
+    flex-direction: column;
+}
+
+/* 左侧按钮区域的布局容器 */
+
+aside-left {
+    width: 280px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
